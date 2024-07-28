@@ -1,0 +1,65 @@
+Weather Forecasting System User Manual
+
+1. Introduction
+
+The Weather Forecasting System is a C++ application that provides current and historical weather data, as well as air quality information, for a given location. The system uses APIs to fetch data from external sources and displays it in a user-friendly format.
+
+2. Setting Up the Application
+
+To set up the application, follow these steps:
+
+Install the required libraries:
+
+jsoncpp for JSON data manipulation
+
+curl for HTTP requests
+
+Compile the code using a C++ compiler (e.g., g++)
+
+Create a configuration file (config.txt) with the following format:
+python:
+API_KEY=YOUR_API_KEY  
+API_URL=https://api.open-meteo.com/v1/forecast  
+AIR_QUALITY_API_KEY=YOUR_AIR_QUALITY_API_KEY  
+AIR_QUALITY_API_URL=https://api.airqualityapi.com/v1/forecast
+
+Replace YOUR_API_KEY and YOUR_AIR_QUALITY_API_KEY with your actual API keys.
+
+3. Running the Application
+
+To run the application, execute the compiled executable file. The application will prompt you to enter a location. Enter a city name or latitude and longitude coordinates, and the application will display the current weather forecast, historical weather data, and air quality information.
+
+4. User Interface
+
+The user interface is a command-line interface that prompts the user to enter a location. Once the location is entered, the application displays the following information:
+
+Current Weather Forecast:
+Temperature
+Wind Speed
+Humidity
+
+Historical Weather Data:
+Temperature
+Wind Speed
+Humidity (for a specified date)
+
+Air Quality:
+AQI (Air Quality Index)
+PM2.5 (Particulate Matter 2.5)
+
+5. Functionalities
+
+The application provides the following functionalities:
+
+Current Weather Forecast: Displays the current weather forecast for a given location.
+Historical Weather Data: Displays historical weather data for a given location and date.
+Air Quality: Displays air quality information for a given location.
+Export Data: Exports weather forecast and historical weather data to CSV and JSON files.
+
+6. Troubleshooting
+
+If you encounter any issues while running the application, check the following:
+
+Ensure that the configuration file is correctly formatted and contains valid API keys.
+Check the API documentation for any changes to the API endpoints or parameters.
+Verify that the required libraries are installed and linked correctly.
